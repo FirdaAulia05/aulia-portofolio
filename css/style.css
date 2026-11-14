@@ -1,0 +1,338 @@
+/* ===== RESET & DASAR ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: hsl(215, 25%, 27%);
+  background-color: hsl(210, 40%, 98%);
+}
+
+a { text-decoration: none; }
+ul { list-style: none; }
+img { max-width: 100%; height: auto; }
+
+/* Pembungkus tengah + pembersih float */
+.aulia_wadah {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.aulia_wadah::after,
+.aulia_skill_daftar::after,
+.aulia_proyek_daftar::after,
+.aulia_footer_atas::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.aulia_biru { color: hsl(217, 91%, 45%); }
+.aulia_biru_muda { color: hsl(213, 94%, 68%); }
+
+/* ===== HEADER & MENU ===== */
+.aulia_header {
+  background-color: #fff;
+  border-bottom: 1px solid hsl(214, 32%, 91%);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.aulia_logo {
+  float: left;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 64px;
+  color: hsl(222, 47%, 16%);
+}
+
+.aulia_logo_ikon {
+  color: hsl(217, 91%, 45%);
+  margin-right: 8px;
+}
+
+.aulia_menu { float: right; }
+
+.aulia_menu li { float: left; }
+
+.aulia_menu a {
+  display: block;
+  padding: 0 16px;
+  line-height: 64px;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(222, 30%, 25%);
+}
+
+.aulia_menu a:hover { color: hsl(217, 91%, 45%); }
+.aulia_menu .aulia_aktif { color: hsl(217, 91%, 45%); }
+
+/* ===== HERO ===== */
+.aulia_hero {
+  background: linear-gradient(135deg, hsl(214, 100%, 97%), hsl(215, 100%, 88%));
+  padding: 50px 0;
+}
+
+.aulia_hero_teks {
+  float: left;
+  width: 55%;
+}
+
+.aulia_sapa {
+  font-size: 18px;
+  color: hsl(222, 47%, 16%);
+}
+
+.aulia_nama {
+  font-size: 48px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: hsl(222, 47%, 16%);
+}
+
+.aulia_peran {
+  font-weight: 600;
+  margin: 8px 0 12px;
+}
+
+.aulia_deskripsi {
+  font-size: 14px;
+  max-width: 420px;
+  margin-bottom: 20px;
+}
+
+.aulia_tombol {
+  display: inline-block;
+  padding: 10px 24px;
+  margin-right: 8px;
+  border: 2px solid hsl(217, 91%, 45%);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.aulia_tombol_isi {
+  background-color: hsl(217, 91%, 45%);
+  color: #fff;
+}
+.aulia_tombol_isi:hover { background-color: hsl(217, 91%, 36%); }
+
+.aulia_tombol_garis {
+  background-color: #fff;
+  color: hsl(217, 91%, 45%);
+}
+.aulia_tombol_garis:hover { background-color: hsl(214, 100%, 94%); }
+
+/* Ilustrasi laptop dari CSS */
+.aulia_hero_gambar {
+  float: right;
+  width: 45%;
+  padding-top: 30px;
+}
+
+.aulia_laptop {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.aulia_layar {
+  height: 160px;
+  background-color: hsl(222, 47%, 16%);
+  border: 8px solid hsl(220, 10%, 25%);
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  line-height: 144px;
+  font-size: 54px;
+  font-weight: 700;
+  color: hsl(213, 94%, 68%);
+}
+
+.aulia_alas {
+  width: 320px;
+  height: 12px;
+  margin: 0 auto;
+  background-color: hsl(220, 10%, 70%);
+  border-radius: 0 0 14px 14px;
+}
+
+/* ===== JUDUL SECTION ===== */
+.aulia_judul {
+  font-size: 26px;
+  font-weight: 700;
+  color: hsl(222, 47%, 16%);
+  margin-bottom: 14px;
+}
+
+.aulia_judul::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  margin-top: 4px;
+  background-color: hsl(217, 91%, 45%);
+}
+
+/* ===== ABOUT ME ===== */
+.aulia_about { padding: 40px 0 20px; }
+
+.aulia_about_teks {
+  float: left;
+  width: 70%;
+  padding-right: 30px;
+}
+
+.aulia_about_isi {
+  font-size: 14px;
+  max-width: 460px;
+  margin-bottom: 12px;
+}
+
+.aulia_info li {
+  display: inline-block;
+  margin-right: 20px;
+  font-size: 13px;
+}
+
+.aulia_about_foto {
+  float: right;
+  width: 30%;
+}
+
+.aulia_about_foto img {
+  display: block;
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 10px;
+}
+
+/* ===== SKILLS ===== */
+.aulia_skills { padding: 20px 0; }
+
+.aulia_skill_daftar { margin: 0 -6px; }
+
+.aulia_skill_kartu {
+  float: left;
+  width: 16.6666%;
+  padding: 6px;
+}
+
+.aulia_skill_isi {
+  background-color: #fff;
+  border: 1px solid hsl(214, 32%, 91%);
+  border-radius: 8px;
+  padding: 12px 10px;
+  font-size: 13px;
+}
+
+.aulia_skill_isi:hover { background-color: hsl(214, 100%, 97%); }
+
+.aulia_skill_isi img,
+.aulia_skill_emoji {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/* ===== PROJECTS ===== */
+.aulia_projects { padding: 20px 0 40px; }
+
+.aulia_proyek_daftar { margin: 0 -8px; }
+
+.aulia_proyek_kartu {
+  float: left;
+  width: 25%;
+  padding: 8px;
+}
+
+.aulia_proyek_isi {
+  background-color: #fff;
+  border: 1px solid hsl(214, 32%, 91%);
+  border-radius: 8px;
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+
+.aulia_proyek_gambar {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+}
+
+.aulia_warna1 { background: linear-gradient(135deg, hsl(210, 100%, 85%), hsl(220, 90%, 70%)); }
+.aulia_warna2 { background: linear-gradient(135deg, hsl(140, 60%, 80%), hsl(160, 70%, 55%)); }
+.aulia_warna3 { background: linear-gradient(135deg, hsl(30, 100%, 85%), hsl(10, 85%, 70%)); }
+.aulia_warna4 { background: linear-gradient(135deg, hsl(260, 80%, 88%), hsl(230, 80%, 70%)); }
+
+.aulia_proyek_judul {
+  padding: 10px 12px 0;
+  font-size: 14px;
+  color: hsl(222, 47%, 16%);
+}
+
+.aulia_proyek_ket {
+  padding: 0 12px;
+  min-height: 56px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.aulia_proyek_link {
+  display: inline-block;
+  padding: 0 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: hsl(217, 91%, 45%);
+}
+.aulia_proyek_link:hover { text-decoration: underline; }
+
+/* ===== FOOTER ===== */
+.aulia_footer {
+  background-color: hsl(222, 47%, 14%);
+  color: hsl(214, 32%, 91%);
+  padding: 24px 0 12px;
+}
+
+.aulia_footer_merek { float: left; }
+
+.aulia_footer_logo {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.aulia_footer_slogan { font-size: 12px; }
+
+.aulia_footer_kontak {
+  float: right;
+  margin-top: 8px;
+}
+
+.aulia_footer_kontak li {
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 13px;
+}
+
+.aulia_footer_hak {
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 12px;
+}
